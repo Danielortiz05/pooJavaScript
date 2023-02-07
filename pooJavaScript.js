@@ -47,3 +47,32 @@
 
 // Es el principio de la programación orientada a objetos que permite modificar o cambiar el comportamiento de los atributos o metodos heredados definidos en
 // una clase padre.
+
+//Static
+
+//En JavaScript hay una palabra reservada llamada static, la cual sirve para asignarse a atributos y metodos de un prototipo con el fin de no crear
+// instancias de prototipos para poder acceder a estas.
+// Ej con atributos:
+// class Persona {
+//     static name = "Daniel";
+// } 
+
+// console.log(Persona.name)
+
+// Ej con metodos 
+
+// class Persona{
+//     static correr(){
+//         return "Corriendo"
+//     }
+// }
+
+// console.log(Persona.correr())
+
+//Los atributos en JavaScript tienen otros atributos internos llamados writable, enumerable, configurable.
+//Writable si su valor es false, no permite sobre escribir el atributo.
+//Enumerable si su valor es false, no se va a mostrar en metodos del prototipo object como Object.keys.
+//Configurable si su valor es false, no se va a permitir que se borre el atributo.
+
+// Object.seal() no permite borrar a los atributos.
+//Object.freeze() no permite borrar ni modificar los atributos.
